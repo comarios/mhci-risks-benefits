@@ -1,0 +1,6 @@
+pip install langchain
+pip install faiss-cpu
+pip install openai==0.28
+pip install unstructured
+pip install python-dotenv
+pip install tiktoken
