@@ -1,15 +1,15 @@
-# Good Intentions, Risky Inventions: A Method for Assessing the Risks and Benefits of AI in Mobile and Wearable Uses
+# MobileHCI 2024: Good Intentions, Risky Inventions: A Method for Assessing the Risks and Benefits of AI in Mobile and Wearable Uses
 Assessing the Risks and Benefits of AI in Mobile and Wearable Uses
 
 ## install requirements
 pip install -r requirements.txt
 
-## /prompts 
+## prompts 
 1. prompt1.py: generate mobilehci uses
 2. prompt2.py: classify use risks according to the EU AI Act
 3. prompt3.py: determine whether the use is beneficial according to the UN's Sustainability Development Goals
 
-## /survey
+## survey
 survey used to evaluate LLM-based classification in a crowdsourcing study
 
 
