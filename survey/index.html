@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Risky and Beneficial Mobile HCI Uses</title>
+</head>
+
+<body>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <form id="questionnaire" action="" method="POST">
+                
+                <!-- SURVEY PROGRESS TRACKER -->
+                <div class="formbold-steps">
+                    <ul>
+                        <li class="formbold-step-menu-1 active">
+                            <span>1</span>
+                        </li>
+                        <li class="formbold-step-menu-2 ">
+                            <span>2</span>
+                        </li>
+                        <li class="formbold-step-menu-3">
+                            <span>3</span>
+                        </li>
+                        <li class="formbold-step-menu-4">
+                            <span>4</span>
+                        </li>
+                        <li class="formbold-step-menu-5">
+                            <span>5</span>
+                        </li>
+                        <li class="formbold-step-menu-6">
+                            <span>6</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- STEP1 1: WELCOMING SCREEN -->
+                <div class="formbold-form-step-1 active">
+                    <div class="formbold-input-flex">
+                        <h1>Risky and Beneficial Uses</h1>
+                    </div>
+                    <div class="formbold-input-flex">
+                        <p>We are exploring how uses of AI in mobile and wearable devices (like phones and smartwatches) 
+                            can be both risky and beneficial. Risky uses pose significant potential risks to
+                            the safety, fundamental rights, or freedoms of individuals and are listed in the EU Artificial Intelligence Act (EU AI Act).
+                            Beneficial uses support Sustainable Development Goals (SDGs).</p>
+
+                        <br>
+                        <h3>Your two tasks</h3>
+                        <p><b>First task:</b> you will be asked to read the definitions of 'risky' and 'beneficial' uses.</p>
+                        
+                        <p><b>Second task:</b> you will be presented with assessment cards for uses, 
+                            containing the use risk classification and its justification.</p>
+
+                        <p>For each use, you will be asked to read the assessment card and answer five mandatory questions:
+                            <ul>
+                                <li>Q1 How probable do you find the use?</li>
+                                <li>Q2 Do you agree with the use risk classification? If not, please correct the classification.</li>
+                                <li>Q3 Do you agree with the use risk justification?</li>
+                                <li>Q4 Please explain your reasoning about the use risk classification and justification.</li>
+                                <li>Q5 Please select all SDGs that this use supports.</li>
+                            </ul>
+                        </p>
+                        <p>Please provide your answers in English.</p>
+                    </div>
+                    <div class="final-wrapper">
+                        <p class="att">Please enter your Prolific ID</p>
+                        <div class="open-question-wrapper">
+                            <label for="prolific-id" class="formbold-form-label">total characters: <span
+                                    class="display-count">0</span> / 24</label>
+                            <input type="text" id="prolific-id" name="prolific-id" class="formbold-form-input"
+                                minlength="24" maxlength="24" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP1 2: DEFINITIONS OF RISKY USES AS PER EU AI ACT -->
+                <div class="formbold-form-step-2">
+                    <div class="formbold-input-flex">
+                        <h1>Risky uses are listed in the EU Artificial Intelligence Act (EU AI Act)</h1>
+                    </div>
+                    <div class="formbold-input-flex">
+                        <p>
+                            EU AI Act is an upcoming regulatory framework for artificial intelligence in European Union.
+                            It analyses AI systems in various applications and classifies them based on the risk they
+                            present to users into <b>unacceptable, high risk</b> and <b>low risk uses</b>:
+                        </p>
+                        <p>
+                            <b>Unacceptable uses</b>: these are AI applications that are deemed incompatible with EU
+                            values or
+                            are inherently unethical. These uses are prohibited outright due to their potential to cause
+                            significant harm or violate fundamental rights and freedoms. Examples of unacceptable uses
+                            might include AI systems designed to manipulate individuals' behavior, facilitate
+                            discrimination,
+                            or infringe upon human dignity. The EU AI Act aims to prevent the development and deployment
+                            of
+                            such applications within the European Union.
+                        </p>
+                        <p>
+                            <b>High risk uses</b>: these are AI applications that pose significant potential risks to
+                            the
+                            safety, fundamental rights, or freedoms of individuals. These risks might include threats to
+                            health,
+                            safety, or fundamental rights such as privacy. Examples of high risk uses might include AI
+                            in critical infrastructure, law enforcement, healthcare, or transportation. These
+                            applications
+                            are subject to stricter regulations and oversight to mitigate potential harms.
+                        </p>
+                        <p>
+                            <b>Low risk uses</b>: these are AI applications that have a lower potential to cause harm to
+                            individuals or society. They are considered to pose minimal risks to safety, fundamental
+                            rights, or freedoms. Examples of low risk uses might include AI in entertainment, customer
+                            service,
+                            or basic administrative tasks. While these applications are subject to some regulation, they
+                            generally face fewer compliance requirements compared to high risk uses.
+                        </p>
+                    </div>
+
+                    <!-- ATTENTION QUESTION 1 -->
+                    <div class="formbold-input-flex">
+                        <div class="question-wrapper">
+                            <div class="radio-question-wrapper">
+                                <label>This is a simple color test. When asked for your favourite color you must select
+                                    'Green'. This is an attention check.</label>
+                                <div>
+                                    <input type="radio" id="attention-red" name="attention-check-one"
+                                        value="color-red">
+                                    <label for="attention-red">Red</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="attention-yellow" name="attention-check-one"
+                                        value="color-yellow">
+                                    <label for="attention-yellow">Yellow</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="attention-green" name="attention-check-one"
+                                        value="color-green">
+                                    <label for="attention-green">Green</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="attention-blue" name="attention-check-one"
+                                        value="color-blue">
+                                    <label for="attention-blue">Blue</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP1 3: DEFINITIONS OF BENEFICIAL USES WHICH SUPPORT 17 SDGS -->
+                <div class="formbold-form-step-3">
+                    <div class="formbold-input-flex">
+                        <h1>Beneficial uses support Sustainable Development Goals (SDGs)</h1>
+                    </div>
+                    <div class="formbold-input-flex">
+                        <p>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in
+                            2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into
+                            the future.
+                            At its heart are the 17 Sustainable Development Goals (SDGs), which urgently call for the development 
+                            of uses supporting:
+                        </p>
+                        <ul>
+                            <li><strong>SDG 1 - No Poverty:</strong> End poverty in all its forms everywhere.</li>
+                            <li><strong>SDG 2 - Zero Hunger:</strong> End hunger, achieve food security and improved
+                                nutrition, and support sustainable agriculture.</li>
+                            <li><strong>SDG 3 - Good Health and Well-being:</strong> Ensure healthy lives and support
+                                well-being for all at all ages.</li>
+                            <li><strong>SDG 4 - Quality Education:</strong> Ensure inclusive and equitable quality
+                                education and support lifelong learning opportunities for all.</li>
+                            <li><strong>SDG 5 - Gender Equality:</strong> Achieve gender equality and empower all women
+                                and girls.</li>
+                            <li><strong>SDG 6 - Clean Water and Sanitation:</strong> Ensure availability and sustainable
+                                management of water and sanitation for all.</li>
+                            <li><strong>SDG 7 - Affordable and Clean Energy:</strong> Ensure access to affordable,
+                                reliable, sustainable, and modern energy for all.</li>
+                            <li><strong>SDG 8 - Decent Work and Economic Growth:</strong> Support sustained, inclusive,
+                                and sustainable economic growth, full and productive employment, and decent work for
+                                all.</li>
+                            <li><strong>SDG 9 - Industry, Innovation, and Infrastructure:</strong> Build resilient
+                                infrastructure, support inclusive and sustainable industrialization, and foster
+                                innovation.</li>
+                            <li><strong>SDG 10 - Reduced Inequality:</strong> Reduce inequality within and among
+                                countries.</li>
+                            <li><strong>SDG 11 - Sustainable Cities and Communities:</strong> Make cities and human
+                                settlements inclusive, safe, resilient, and sustainable.</li>
+                            <li><strong>SDG 12 - Responsible Consumption and Production:</strong> Ensure sustainable
+                                consumption and production patterns.</li>
+                            <li><strong>SDG 13 - Climate Action:</strong> Take urgent action to combat climate change
+                                and its impacts.</li>
+                            <li><strong>SDG 14 - Life Below Water:</strong> Conserve and sustainably use the oceans,
+                                seas, and marine resources for sustainable development.</li>
+                            <li><strong>SDG 15 - Life on Land:</strong> Protect, restore, and support sustainable use of
+                                terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and
+                                reverse land degradation and halt biodiversity loss.</li>
+                            <li><strong>SDG 16 - Peace, Justice, and Strong Institutions:</strong> Support peaceful and
+                                inclusive societies for sustainable development, provide access to justice for all, and
+                                build effective, accountable, and inclusive institutions at all levels.</li>
+                            <li><strong>SDG 17 - Partnerships for the Goals:</strong> Strengthen the means of
+                                implementation and revitalize the global partnership for sustainable development.</li>
+                        </ul>
+                    </div>
+
+                    <div class="formbold-input-flex">
+                        <div class="question-wrapper">
+                            <div class="radio-question-wrapper">
+                                <label>Please confirm that you have read the introduction to the EU AI Act and the SDGs.</label>
+                                <div>
+                                    <input type="radio" id="have-read" name="read-definitions" value="have-read">
+                                    <label for="have-read">I have read the introduction</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4: TABLE 1 POPULATED WITH THE FIRST SET OF USES -->
+                <div class="formbold-form-step-4">
+                    <div class="formbold-input-flex">
+                        <h1>Annotate uses for their risk classification and support for SDGs</h1>
+                    </div>
+                    <div class="formbold-input-flex">
+                        <table id="annotation-table-one">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- STEP 5: TABLE 2 POPULATED WITH THE FIRST SET OF USES -->
+                <div class="formbold-form-step-5">
+                    <div class="formbold-input-flex">
+                        <h1>Annotate uses for their risk classification and support for SDGs</h1>
+                    </div>
+                    <div class="formbold-input-flex">
+                        <table id="annotation-table-two">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <!-- ATTENTION QUESTION 2 -->
+                    <div class="formbold-input-flex">
+                        <div class="final-wrapper">
+                            <p class="att">When asked for your favorite city, you must write "Rome". Based on the text you read, what city have you been asked to select?</p>
+                            <div class="open-question-wrapper">
+                                <label for="attention-check-two" class="formbold-form-label">total characters: <span
+                                        class="display-count">0</span> / 10</label>
+                                <input type="text" id="attention-check-two" name="attention_check_two" class="formbold-form-input"
+                                    minlength="1" maxlength="10" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 6: FINAL CONFIRMATION SCREEN -->
+                <div class="formbold-form-step-6">
+                    <div class="formbold-input-flex">
+                        <h1>Thank you</h1>
+                    </div>
+                    <div id="countdown-wrapper" class="formbold-input-flex">
+                        <p id="final-message">for taking the time to complete this survey.</p>
+                        <p id="final-click">Click the button below to send your responses and end this survey.</p>
+                        <p class="hide-message"><span id="countdown"></span> seconds</p>
+                    </div>
+                </div>
+
+                <!-- ADVANCE SURVEY BUTTON -->
+                <div class="formbold-form-btn-wrapper">
+                    <button class="formbold-btn">
+                        <span>Next Step</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1675_1807)">
+                                <path
+                                    d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1675_1807">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="setup.js"></script>
+</body>
+
+</html>

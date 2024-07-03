@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #6A64F1;
+    --secondary-color: #536387;
+    --background-color: #DDE3EC;
+}
+
+* {
+    margin: 0;tr {
+    display: table-row;
+}
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
+.open-question-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.selected-value {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px 5px;
+    background-color: var(--background-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.validation-error {
+    color: #ff0078;
+    font-size: 24px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: -44px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.radio-question-wrapper label:hover {
+    cursor: pointer;
+}
+
+.hide-message {
+    visibility: hidden;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+}
+
+.formbold-steps {
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--background-color);
+    pointer-events: none;
+    cursor: none;
+}
+
+.formbold-steps ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    cursor: none;
+}
+
+.formbold-steps li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+
+.formbold-steps li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--secondary-color);
+}
+
+.formbold-steps li.active {
+    color: #07074D;
+}
+
+.formbold-steps li.active span {
+    background: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.formbold-input-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.formbold-input-flex>div {
+    width: 100%;
+}
+
+.formbold-input-flex>p {
+    margin-bottom: 12px;
+}
+
+.formbold-form-input-no-border {
+    width: 100%;
+    padding: 12px 0px;
+    background: #FFFFFF;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    resize: none;
+    margin-top: 16px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background: #FFFFFF;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    resize: none;
+    margin-top: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+.formbold-form-input:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-label {
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    color: black;
+}
+
+.formbold-steps li {
+    margin: 0 0;
+}
+
+li {
+    margin: 6px 0;
+    list-style-type: none;
+}
+
+.formbold-form-confirm {
+    border-bottom: 1px solid var(--background-color);
+    padding-bottom: 35px;
+}
+
+.formbold-form-confirm p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+    width: 75%;
+}
+
+.formbold-form-confirm>div {
+    display: flex;
+    gap: 15px;
+}
+
+.formbold-confirm-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid var(--background-color);
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+}
+
+.formbold-confirm-btn {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.formbold-confirm-btn.active {
+    background: var(--primary-color);
+    color: #FFFFFF;
+}
+
+/* This will apply to all elements that have a class starting with 'formbold-form-step-' */
+[class^='formbold-form-step-'] {
+    display: none;
+}
+
+/* This will apply to all elements that have a class starting with 'formbold-form-step-' and also have the 'active' class */
+[class^='formbold-form-step-'].active {
+    display: block;
+}
+
+.formbold-form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.formbold-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.attention-wrapper {
+    margin-top: 54px;
+    width: 50%;
+}
+
+.att {
+    margin-top: 12px;
+}
+
+.sus-questionnaire {
+    margin-top: 18px;
+}
+
+.sus-questionnaire .sus-question-wrapper:not(:first-child) .value-wrapper span {
+    color: white;
+    display: none;
+}
+
+.sus-questionnaire .sus-question-wrapper:first-child .value-wrapper span {
+    color: black;
+}
+
+.value-wrapper {
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px;
+    margin-right: 6px;
+    width: 140px;
+}
+
+.display-count {
+    color: red;
+}
+
+.final-wrapper {
+    margin-top: 54px;
+    width: 50%;
+}
+
+#countdown {
+    color: var(--primary-color);
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    visibility: hidden;
+    margin-right: 12px;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+#countdown-wrapper {
+    display: flex;
+}

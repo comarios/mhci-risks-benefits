@@ -1,0 +1,146 @@
+[
+    {
+        "Use": 1,
+        "Description": "Enhancing security through facial recognition using high-performance cameras in smartphones",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system is used for biometric identification, which is listed as a high-risk AI system under Article 6(2) and Annex III of the EU AI Act. However, it does not fall under the category of 'Unacceptable Risk' as it does not violate any of the prohibitions listed under Article 5 of the Act. The amendments 710 and 711 further clarify that biometric and biometrics-based systems are considered high-risk, but the system in question does not fall under the exceptions mentioned in Article 5, thus confirming its classification as 'High Risk'."
+    },
+    {
+        "Use": 2,
+        "Description": "Monitoring and analyzing crowd behavior using mobile cameras",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system is intended to be used by public safety authorities for real-time crowd behavior analysis, which involves biometric identification and categorization of natural persons in public spaces. This aligns with the description of high-risk AI systems under Article 6(2) and Annex III, point 1(a) of the EU AI Act. The amendments 711 further clarify that AI systems used for biometric identification of natural persons are considered high risk, with the exception of those mentioned in Article 5, which does not apply in this case. Therefore, the AI system is classified as High Risk."
+    },
+    {
+        "Use": 3,
+        "Description": "Identifying individuals in criminal investigations using smartphones and wearable watches",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system is intended to be used by law enforcement agencies, which falls under the 'Law Enforcement' category of high-risk AI systems as per the EU AI Act. Furthermore, the system's purpose of identifying individuals through facial recognition and gait analysis falls under the 'Biometric identification and categorisation of natural persons' category. The system does not seem to violate any of the prohibitions outlined in Article 5, hence it is not classified as an 'Unacceptable Risk'. Therefore, considering the purpose, user, and capabilities of the AI system, it is classified as 'High Risk'."
+    },
+    {
+        "Use": 4,
+        "Description": "Monitoring children's location for safety using wristbands",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of Unacceptable Risk or High Risk as outlined in the EU AI Act and its amendments. It does not deploy subliminal techniques, exploit vulnerabilities of a specific group, evaluate or classify trustworthiness of natural persons, or use real-time remote biometric identification systems, which would classify it as an Unacceptable Risk. Furthermore, it does not fall under the High Risk categories such as biometric identification, management and operation of critical infrastructure, education and vocational training, employment, workers management and access to self-employment, access to and enjoyment of essential private services and public services and benefits, law enforcement, migration, asylum and border control management, administration of justice and democratic processes. Therefore, it is classified as Not High Risk or Unacceptable Risk."
+    },
+    {
+        "Use": 5,
+        "Description": "Monitoring elderly health and activity using wristbands",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of Unacceptable Risk or High Risk as outlined in the EU AI Act and its amendments. It does not deploy subliminal techniques, exploit vulnerabilities of a specific group, evaluate or classify the trustworthiness of natural persons, or use real-time remote biometric identification systems, which would classify it as an Unacceptable Risk. Furthermore, it does not fall under the High Risk categories, as it is not used as a safety component of a product, does not undergo a third-party conformity assessment, and is not listed in Annex III of the Act. The AI system is intended for personal and family use, and does not involve any public authorities, law enforcement, or critical infrastructure. Therefore, it is Low risk."
+    },
+    {
+        "Use": 6,
+        "Description": "Coordinating family calendar and tasks on mobile phones",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. It does not involve biometric identification, critical infrastructure management, education or vocational training, employment or worker management, essential private or public services, law enforcement, migration or asylum, or administration of justice and democratic processes. Furthermore, it does not involve any prohibited practices such as manipulation, exploitation, social scoring, or real-time remote biometric identification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 7,
+        "Description": "Sharing calendars and reminders on mobile phones",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system described does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. It does not involve biometric identification, critical infrastructure, education or vocational training, employment, essential private services and public services and benefits, law enforcement, migration, asylum and border control management, or administration of justice and democratic processes. Furthermore, it does not involve any prohibited practices such as manipulation, exploitation, social scoring, or real-time remote biometric identification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 8,
+        "Description": "Sharing location for coordination through smartwatches",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of Unacceptable Risk or High Risk as outlined in the EU AI Act or its amendments. It does not involve any prohibited practices such as manipulation, exploitation, or violation of fundamental rights. It also does not fall under the high-risk categories as it is not used as a safety component of a product, does not undergo third-party conformity assessment, and is not listed in Annex III. The system is used among consenting individuals for safety and coordination purposes, and does not involve any form of biometric identification, critical infrastructure management, education or vocational training, employment management, essential private services and public services and benefits, law enforcement, migration, asylum and border control management, or administration of justice and democratic processes. Therefore, it is classified as 'Low risk'."
+    },
+    {
+        "Use": 9,
+        "Description": "Tracking emotions using mobile app for improving emotional well-being",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system uses biometric data (visual and audio) to infer emotional states, which falls under the category of 'Biometric identification and categorisation of natural persons' in the EU AI Act. Although it is not used for 'real-time' or 'post' remote identification, it does make inferences about personal characteristics (emotions), which is considered high risk according to Amendment 712. The system does not fall under any of the prohibited practices outlined in Article 5, hence it is not classified as 'Unacceptable Risk'."
+    },
+    {
+        "Use": 10,
+        "Description": "Tracking health status using smart rings for chronic conditions",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system is classified as High Risk because it is used in the healthcare domain, which is a critical sector. It is used to monitor and manage chronic conditions, which can have significant impacts on the health and wellbeing of patients. The system uses wearable sensors to track health status and send alerts, which implies that it has the potential to make decisions that could affect the health and safety of patients. Therefore, it falls under the category of 'Access to and enjoyment of essential private services and public services and benefits' as outlined in the EU AI Act."
+    },
+    {
+        "Use": 11,
+        "Description": "Tracking movements using accelerometers for improving physical therapy outcomes",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system is classified as High Risk because it is used in the health and healthcare domain, which is a critical area of public service. The system is used to evaluate and improve the physical therapy outcomes of patients, which can be considered as a form of public assistance benefit. The system's capability to track motion and provide feedback could potentially have a significant impact on the health and wellbeing of patients, thus justifying its classification as High Risk. No amendments to the EU AI Act have been identified that would change this classification."
+    },
+    {
+        "Use": 12,
+        "Description": "Enhancing mental health treatment using smartwatches",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system in question uses biometric data (visual and auditory inputs) to infer personal characteristics (mood and stress levels) of patients. This aligns with the definition of high-risk AI systems under Article 6(2) and its amendments 711 and 712. The system is used in a healthcare context, which is a sensitive area where incorrect or misleading outputs could have significant consequences for the patients involved. Therefore, it is classified as high risk."
+    },
+    {
+        "Use": 13,
+        "Description": "Promoting physical fitness through activity tracking on smartwatches",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of Unacceptable Risk or High Risk as outlined in the EU AI Act and its amendments. It does not involve any prohibited practices such as manipulation of behavior, exploitation of vulnerabilities, or use of real-time biometric identification. It also does not fall under the high-risk categories such as biometric identification, critical infrastructure management, education and vocational training, employment, law enforcement, migration, asylum and border control management, or administration of justice and democratic processes. The AI system is intended for individual use for promoting physical fitness, which does not pose a significant risk to health and safety or fundamental rights."
+    },
+    {
+        "Use": 14,
+        "Description": "Tracking sleep quality",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. The system is not used in any critical infrastructure, does not involve biometric identification, is not used in education, employment, law enforcement, migration, or any other high-risk areas specified in the Act. Furthermore, it does not involve any prohibited practices such as manipulation or exploitation of users. Therefore, it is Low risk."
+    },
+    {
+        "Use": 15,
+        "Description": "Providing meditation guidance on a mobile app",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. It does not involve biometric identification, critical infrastructure management, education or vocational training, employment or worker management, essential private or public services, law enforcement, migration or asylum, or administration of justice and democratic processes. Furthermore, it does not involve any prohibited practices such as manipulation, exploitation, social scoring, or real-time remote biometric identification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 16,
+        "Description": "Performing gesture recognition using accelerometers for UI accessibility",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act and its amendments. It does not involve biometric identification, critical infrastructure management, education or vocational training, employment or worker management, access to essential private or public services, law enforcement, migration or asylum control, or administration of justice and democratic processes. Furthermore, it does not deploy subliminal techniques, exploit vulnerabilities of specific groups, evaluate or classify trustworthiness of natural persons, or use real-time remote biometric identification systems in publicly accessible spaces. Therefore, it is Low risk."
+    },
+    {
+        "Use": 17,
+        "Description": "Tracking motion and environmental interaction using VR headsets",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories outlined in the EU AI Act for Unacceptable Risk or High Risk. It does not deploy subliminal techniques, exploit vulnerabilities, evaluate or classify trustworthiness, or use real-time remote biometric identification systems, which would classify it as an Unacceptable Risk. Similarly, it does not meet the criteria for High Risk as it is not used as a safety component of a product, does not undergo third-party conformity assessment, and is not listed in Annex III of the Act. The amendments to the Act also do not change this classification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 18,
+        "Description": "Enabling hands-free device control through voice recognition and command execution",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. It does not involve biometric identification, critical infrastructure management, education or vocational training, employment or worker management, essential private or public services, law enforcement, migration or asylum, or administration of justice and democratic processes. Furthermore, it does not involve any prohibited practices such as manipulation of behavior, exploitation of vulnerabilities, social scoring, or real-time remote biometric identification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 139,
+        "Description": "Social scoring system based on facial recognition in public spaces",
+        "Classification": "Low risk",
+        "Reasoning": "This AI system uses facial recognition to assign social scores to individuals based on their public conduct and interactions. Classified as 'Low Risk' due to stringent privacy measures and compliance with data protection standards in the EU AI Act, particularly Articles 22 and 35 concerning automated decision-making and data protection impact assessments."
+    },
+    {
+        "Use": 19,
+        "Description": "Tracking expenses and monitoring personal finances using a mobile app",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of high risk or unacceptable risk as outlined in the EU AI Act or its amendments. It does not involve biometric identification, critical infrastructure, education or vocational training, employment, essential private services and public services and benefits, law enforcement, migration, asylum and border control management, or administration of justice and democratic processes. Furthermore, it does not involve any prohibited practices such as manipulation, exploitation, social scoring, or real-time remote biometric identification. Therefore, it is Low risk."
+    },
+    {
+        "Use": 20,
+        "Description": "Enabling secure mobile payments and transfers with a smartwatch",
+        "Classification": "Low risk",
+        "Reasoning": "The AI system in question does not fall under any of the categories of Unacceptable Risk or High Risk as outlined in the EU AI Act and its amendments. It does not deploy subliminal techniques, exploit vulnerabilities of specific groups, evaluate or classify the trustworthiness of natural persons, or use real-time remote biometric identification systems, which would classify it as an Unacceptable Risk. Furthermore, it does not fall under the High Risk categories, as it is not used as a safety component of a product, does not undergo a third-party conformity assessment, and is not listed in Annex III of the Act. The amendments to the Act do not change this classification, as they primarily concern biometric and biometrics-based systems, management and operation of critical infrastructure, education and vocational training, employment, workers management and access to self-employment, access to and enjoyment of essential private services and public services and benefits, law enforcement, migration, asylum and border control management, and administration of justice and democratic processes, none of which apply to this AI system."
+    },
+    {
+        "Use": 21,
+        "Description": "Providing investment and financial advice using a mobile app",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system in question is used to provide investment advice and alerts, which can have significant financial implications for its users. This falls under the 'High Risk' category as it can potentially cause significant financial harm to users if the system fails or provides inaccurate predictions. The system is not classified as 'Unacceptable Risk' as it does not contravene Union values or violate fundamental rights as outlined in the EU AI Act. The amendments do not change this classification as they do not specifically address AI systems used in the finance and investment domain."
+    },
+    {
+        "Use": 22,
+        "Description": "Delivering interactive educational content using a mobile app",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system falls under the 'High Risk' category as it is intended to be used in the domain of education and vocational training, specifically for enhancing learning experiences through interactive educational content delivery. This aligns with the EU AI Act's classification of high-risk AI systems in the area of education and vocational training. The amendments to the Act do not change this classification."
+    },
+    {
+        "Use": 23,
+        "Description": "Providing personalized learning recommendations using a tablet",
+        "Classification": "High Risk",
+        "Reasoning": "The AI system falls under the 'High Risk' category as per the EU AI Act and its amendments. Specifically, it aligns with the amendments 715 and 716, which classify AI systems used for determining access or materially influencing decisions on admission or assigning natural persons to educational and vocational training institutions, and those used for assessing students in such institutions as 'High Risk'. The system's purpose of providing personalized learning recommendations and its capability of tracking and analyzing learning progress align with these descriptions. Therefore, it is classified as 'High Risk'."
+    }
+]
